@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5542b3b0-e25d-4ab1-a9d6-e30c6163a7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_08_01_2021_18_37.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laboutiquefrancaise.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/css/carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210112152213.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_includes/_carousel.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laboutiquefrancaise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laboutiquefrancaise.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -134,6 +151,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mnReKIt48Hbwo9hlkjtFON0eh8" />
@@ -143,10 +162,26 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Panterest" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HomeControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\HomeControllerTest" file="$PROJECT_DIR$/tests/Controller/HomeControllerTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.HomeControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -156,11 +191,55 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610127465232</updated>
-      <workItem from="1610127468951" duration="1360000" />
+      <workItem from="1610127468951" duration="2138000" />
+      <workItem from="1610376101305" duration="74000" />
+      <workItem from="1610462448846" duration="12924000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2190" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610464793842">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2190" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610464793842" />
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610475010220">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610475010220" />
+    <state x="2378" y="445" key="FileChooserDialogImpl" timestamp="1610474927737">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2378" y="445" key="FileChooserDialogImpl/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610474927737" />
+    <state width="1128" height="382" key="GridCell.Tab.0.bottom" timestamp="1610478510136">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1128" height="382" key="GridCell.Tab.0.bottom/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478510136" />
+    <state width="1128" height="382" key="GridCell.Tab.0.center" timestamp="1610478510136">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1128" height="382" key="GridCell.Tab.0.center/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478510136" />
+    <state width="1128" height="382" key="GridCell.Tab.0.left" timestamp="1610478510136">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1128" height="382" key="GridCell.Tab.0.left/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478510136" />
+    <state width="1128" height="382" key="GridCell.Tab.0.right" timestamp="1610478510136">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state width="1128" height="382" key="GridCell.Tab.0.right/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478510136" />
+    <state x="2099" y="348" key="SettingsEditor" timestamp="1610472878425">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2099" y="348" key="SettingsEditor/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610472878425" />
+    <state x="2275" y="429" width="797" height="547" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1610464538851">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2275" y="429" width="797" height="547" key="com.jetbrains.php.test.PhpNewTestDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610464538851" />
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1610475954890">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610475954890" />
   </component>
 </project>
