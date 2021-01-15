@@ -23,9 +23,6 @@ class RegisterType extends AbstractType
         $builder
             ->add('firstname', TextType::class, [
                 'label' => 'Prénom',
-                'attr' => [
-                    'placeholder' => 'ex: Jean'
-                ],
                 'constraints' => [
                     new NotBlank([
                         'message' => "Firstname required"
@@ -38,9 +35,6 @@ class RegisterType extends AbstractType
             ])
             ->add('lastname', TextType::class, [
                 'label' => 'Nom',
-                'attr' => [
-                    'placeholder' => "ex: Dupond"
-                ],
                 'constraints' => [
                     new NotBlank([
                         'message' => 'Lastname required'
@@ -53,9 +47,6 @@ class RegisterType extends AbstractType
             ])
             ->add('email', EmailType::class, [
                 'label' => 'Email',
-                'attr' => [
-                    'placeholder' => 'ex: jean.dupond@gmail.com'
-                ],
                 'constraints' => [
                     new NotBlank([
                         'message' => "Email required"
@@ -89,12 +80,7 @@ class RegisterType extends AbstractType
                 // this is read and encoded in the controller
                 'mapped' => false,
             ])
-            ->add('submit', SubmitType::class, [
-                'label' => 'Enregistrer',
-                'attr' => [
-                    'className' => 'btn btn-success btn-block'
-                ]
-            ])
+
         ;
     }
 

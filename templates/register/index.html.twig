@@ -1,15 +1,35 @@
 {% extends "base/base.html.twig" %}
 
-{% block title %}Register{% endblock %}
+{% block title 'Register'%}
 
 {% block body %}
 
-    <h1>Inscription</h1>
+    <div class="row my-5">
+        <div class="col-6 mx-auto card bg-white border-info shadow">
+            <h1 class="h2 text-center my-3">Registration</h1>
+            <hr class="mx-auto mb-4 w-75">
 
-    {{ form_start(registerForm)}}
+            {{ form_start(registerForm)}}
 
-    {{ form_row(registerForm)}}
+            <div class="row">
+                <div class="col-6">
+                    {{ form_row(registerForm.firstname)}}
+                </div>
+                <div class="col-6">
+                    {{ form_row(registerForm.lastname)}}
+                </div>
+            </div>
 
-    {{ form_end(registerForm)}}
+            {{ form_row(registerForm.email)}}
+
+            {{ form_row(registerForm.password)}}
+
+            <button type="submit" class="btn btn-block btn-info mt-5 mb-3">Register me !</button>
+
+            {{ form_end(registerForm)}}
+        </div>
+
+    </div>
+
 
 {% endblock %}
