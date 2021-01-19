@@ -1,12 +1,31 @@
+:root {
+    --bs-info: #0dcaf0;
+    --bs-red: #be2d38;=
+}
+body .container-xl {
+    max-width: 1500px;
+}
+.fa-arrow-circle-up:hover {
+    filter: brightness(0.8);
+}
+
+a.nav-link.btn.btn-outline-info.btn-sm:hover {
+    background-color: transparent !important;
+    box-shadow: 0 0 6px 1px rgba(196, 246, 246, 0.5) !important;
+    color: white;
+}
+
+a.nav-link.btn.btn-outline-danger.btn-sm:hover {
+    background-color: transparent !important;
+    box-shadow: 0 0 6px 1px rgba(196, 246, 246, 0.5) !important;
+    color: white;
+}
+
+
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-}
 
 
 /* CUSTOMIZE THE CAROUSEL

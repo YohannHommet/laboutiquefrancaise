@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5542b3b0-e25d-4ab1-a9d6-e30c6163a7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210112163206.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AccountController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AccountPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ChangePasswordType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/_includes/_flashMessages.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/account/password.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/LoginAuthenticator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_carousel.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_carousel.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_footer.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/register/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +154,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
     </include_path>
   </component>
   <component name="ProjectId" id="1mnReKIt48Hbwo9hlkjtFON0eh8" />
@@ -159,6 +175,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Labs\Projets\BebeChat\Symfony\laboutiquefrancaise\templates\account" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="HomeControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -182,7 +203,9 @@
       <workItem from="1610127468951" duration="2138000" />
       <workItem from="1610376101305" duration="74000" />
       <workItem from="1610462448846" duration="13034000" />
-      <workItem from="1610701644068" duration="7304000" />
+      <workItem from="1610701644068" duration="10723000" />
+      <workItem from="1610712450695" duration="18648000" />
+      <workItem from="1611049093946" duration="3108000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring base.html.twig, adding Register process">
       <created>1610478590785</created>
@@ -191,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610478590785</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add: Login process">
+      <created>1610709007219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610709007219</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,7 +229,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactoring base.html.twig, adding Register process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring base.html.twig, adding Register process" />
+    <MESSAGE value="Add: Login process" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add: Login process" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2190" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610464793842">
@@ -210,14 +241,18 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2327" y="542" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610703134253" />
-    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610475010220">
+    <state x="2400" y="417" key="#com.intellij.ide.util.MemberChooser" timestamp="1610731579214">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610475010220" />
-    <state x="2056" y="186" key="CommitChangelistDialog2" timestamp="1610478588850">
+    <state x="2400" y="417" key="#com.intellij.ide.util.MemberChooser/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610731579214" />
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610724515910">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2056" y="186" key="CommitChangelistDialog2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478588850" />
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610724515910" />
+    <state x="2056" y="186" key="CommitChangelistDialog2" timestamp="1610709005810">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2056" y="186" key="CommitChangelistDialog2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610709005810" />
     <state x="2378" y="445" key="FileChooserDialogImpl" timestamp="1610704064043">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -246,17 +281,21 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1977" y="528" key="SettingsEditor/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610704149025" />
-    <state x="2186" y="401" key="Vcs.Push.Dialog.v2" timestamp="1610478594230">
+    <state x="2186" y="401" key="Vcs.Push.Dialog.v2" timestamp="1610709010773">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2186" y="401" key="Vcs.Push.Dialog.v2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610478594230" />
+    <state x="2186" y="401" key="Vcs.Push.Dialog.v2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610709010773" />
     <state x="2275" y="429" width="797" height="547" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1610464538851">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2275" y="429" width="797" height="547" key="com.jetbrains.php.test.PhpNewTestDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610464538851" />
-    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1610707326735">
+    <state x="2251" y="333" key="run.anything.popup" timestamp="1610724829407">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610707326735" />
+    <state x="2251" y="333" key="run.anything.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610724829407" />
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1610725722248">
+      <screen x="0" y="0" width="3440" height="1400" />
+    </state>
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610725722248" />
   </component>
 </project>

@@ -7,65 +7,47 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
 
-class RegisterType extends AbstractType
+class ChangePasswordType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
             ->add('firstname', TextType::class, [
-                'label' => 'Prénom',
+                'disabled' => true,
+                'label' => 'Firstname',
                 'attr' => [
                     'class' => 'mb-3'
-                ],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => "Firstname required"
-                    ]),
-                    new Length([
-                        'min' => 3,
-                        'minMessage' => "firstname should be at least 3 characters"
-                    ])
                 ]
             ])
             ->add('lastname', TextType::class, [
-                'label' => 'Nom',
+                'disabled' => true,
+                'label' => 'Firstname',
                 'attr' => [
                     'class' => 'mb-3'
-                ],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => 'Lastname required'
-                    ]),
-                    new Length([
-                        'min' => 3,
-                        'minMessage' => "Lastname should be at least 3 characters"
-                    ])
                 ]
             ])
             ->add('email', EmailType::class, [
+                'disabled' => true,
                 'label' => 'Email',
                 'attr' => [
                     'class' => 'mb-3'
-                ],
-                'constraints' => [
-                    new NotBlank([
-                        'message' => "Email required"
-                    ]),
-                    new Email([
-                        'message' => "Please enter a valid email"
-                    ])
                 ]
             ])
-            ->add('password', RepeatedType::class, [
+            ->add('old_password', PasswordType::class, [
+                'mapped' => false,
+                'label' => 'Actual Password',
+                'attr' => [
+                    'class' => 'mb-3'
+                ]
+            ])
+            ->add('new_password', RepeatedType::class, [
                 'type' => PasswordType::class,
                 'first_options' => [
                     'constraints' => [
@@ -79,13 +61,13 @@ class RegisterType extends AbstractType
                             'max' => 4096,
                         ]),
                     ],
-                    'label' => 'Password',
+                    'label' => 'Enter new Password',
                     'attr' => [
-                        'class' => 'mb-3'
+                        'class' => 'mb-2'
                     ],
                 ],
                 'second_options' => [
-                    'label' => 'Repeat Password',
+                    'label' => 'Repeat new Password',
                     'attr' => [
                         'class' => 'mb-3'
                     ],
@@ -95,7 +77,6 @@ class RegisterType extends AbstractType
                 // this is read and encoded in the controller
                 'mapped' => false,
             ])
-
         ;
     }
 

@@ -1,0 +1,21 @@
+{% extends "base/base.html.twig" %}
+
+{% block title 'Account'%}
+
+{% block body %}
+
+    <h2>Welcome {{ app.user.firstname }} {{ app.user.lastname }} !</h2>
+
+    <h4 class="text-muted">Bienvenue dans votre espace personnel</h4>
+
+    <a href="{{ path('app_account_password')}}">Change your password</a>
+
+    <br>
+    <hr>s
+        todo: <br>
+            - Ajouter des adresses pour la livraison <br>
+            - Liste des commandes <br>
+    <hr>
+
+
+{% endblock %}
