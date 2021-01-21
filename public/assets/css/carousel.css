@@ -21,6 +21,10 @@ a.nav-link.btn.btn-outline-danger.btn-sm:hover {
     color: white;
 }
 
+.d-grid.card.h-100.p-3.position-relative.shadow-sm:hover
+{
+    box-shadow: 0 0 7px 2px rgb(196, 246, 246);
+}
 
 
 /* GLOBAL STYLES
