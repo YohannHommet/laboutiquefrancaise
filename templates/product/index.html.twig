@@ -4,38 +4,46 @@
 
 {% block body %}
 
-    <h1>The Products</h1>
+    <div class="container-xl mt-lg-5 mt-3">
+        <h1 class="h2">Our Products</h1>
 
-    <div class="container-xl">
         <div class="row">
 
-            {% for product in products %}
+            <div class="col-lg-3 col-md-4">
+                {{ form(searchForm) }}
+            </div>
 
-                <div class="col-md-4 gy-5">
-                    <div class="d-grid card h-100 p-3 position-relative shadow-sm border-light">
-                        <h3 class="card-title text-center h2 ">
-                            {{ product.name }}
-                        </h3>
-                        <a href="{{ path('app_product_show', {'slug': product.slug}) }}" class="">
-                            <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img card-img-top img-fluid">
-                        </a>
-                        <div class="card-body">
-                            <h2 class="h5 text-muted">
-                                {{ product.subtitle }}
-                            </h2>
-                            <p class="text-center fw-bold mt-3">
-                                {{ (product.price / 100) | number_format(2, ',', ' ') }} €
-                            </p>
+            <div class="col-lg-9 col-md-8">
+                <div class="row">
+                    {% for product in products %}
+
+                        <div class="col-lg-4 col-md-6 gy-5">
+                            <div class="card h-100 p-3 position-relative shadow-sm border-light">
+                                <h3 class="card-title text-center h2 ">
+                                    {{ product.name }}
+                                </h3>
+                                <a href="{{ path('app_product_show', {'slug': product.slug}) }}" class="">
+                                    <img src="/uploads/{{ product.illustration }}" alt="{{ product.name }}" class="img card-img-top img-fluid">
+                                </a>
+                                <div class="card-body">
+                                    <h2 class="h5 text-muted">
+                                        {{ product.subtitle }}
+                                    </h2>
+                                    <p class="text-center fw-bold mt-3">
+                                        {{ (product.price / 100) | number_format(2, ',', ' ') }} €
+                                    </p>
+                                </div>
+                                <a href="{{ path('app_cart_add', {'id':product.id}) }}" class="position-absolute top-0 start-100 translate-middle badge border border-secondary rounded-circle bg-info" style=""><i class="fas fa-plus py-1"></i></a>
+                            </div>
                         </div>
-                        <a href="" class="position-absolute top-0 start-100 translate-middle badge border border-secondary rounded-circle bg-info" style=""><i class="fas fa-plus py-1"></i></a>
-                    </div>
+
+                    {% endfor %}
                 </div>
 
-            {% endfor %}
+            </div>
 
         </div>
+
     </div>
-
-
 
 {% endblock %}

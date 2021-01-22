@@ -1,0 +1,69 @@
+
+{% extends "base/base.html.twig" %}
+
+{% block title 'My Cart from la Boutique Française'%}
+
+{% block body %}
+
+    <div class="container position-relative">
+
+        <h1>My cart</h1>
+
+        <h4 class="mb-5">Retrouver l'ensemble de vos produits ici..</h4>
+
+
+        <table class="table table-responsive mt-5">
+            <thead class="table-light border-top-secondary">
+            <tr>
+                <th>Products</th>
+                <th></th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% set total = null %}
+            {% for product in cart %}
+                <tr>
+                    <th>
+                        <img src="/uploads/{{ product.product.illustration }}" alt="{{ product.product.name }}" height="75px">
+                    </th>
+                    <td class="">
+                        {{ product.product.name }} <br>
+                        <small class="text-muted">{{ product.product.subtitle }}</small>
+                    </td>
+                    <td class="">
+                        <a href="{{ path('app_cart_decrease', {'id': product.product.id}) }}"><i class="fas fa-minus text-secondary"></i></a>
+                        <span class="fs-5 mx-2">{{ product.quantity }}</span>
+                        <a href="{{ path('app_cart_add', {'id': product.product.id}) }}"><i class="fas fa-plus text-secondary"></i></a>
+                    </td>
+                    <td class="">{{ (product.product.price / 100) | number_format(2, ',', ' ') }} €</td>
+                    <td class="">{{ ((product.quantity * product.product.price) / 100) | number_format(2, ',', ' ') }} €</td>
+                    <td>
+                        <a href="{{ path('app_cart_remove', {'id': product.product.id}) }}"><i class="fas fa-trash-alt text-danger"></i></a>
+                    </td>
+                </tr>
+                {% set total = total + (product.quantity * product.product.price) %}
+            {% endfor %}
+            </tbody>
+            <tfoot class="bg-light">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class=""><b>TOTAL</b></td>
+                <td colspan="2"><b>{{ (total / 100) | number_format(2, ',', ' ') }} €</b></td>
+            </tr>
+            </tfoot>
+        </table>
+        <div class="position-absolute end-0">
+            <button class="btn btn-outline-info px-5 me-3">Pay</button>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

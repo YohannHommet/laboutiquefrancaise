@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5542b3b0-e25d-4ab1-a9d6-e30c6163a7af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/product/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classe/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classe/Search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/CartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/SearchType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/cart/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/carousel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/_includes/_footer.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_footer.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegisterType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegisterType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/_includes/_flashMessages.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_flashMessages.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/_includes/_navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +202,8 @@
       <workItem from="1610701644068" duration="10723000" />
       <workItem from="1610712450695" duration="18648000" />
       <workItem from="1611049093946" duration="16983000" />
-      <workItem from="1611233117510" duration="10167000" />
+      <workItem from="1611233117510" duration="18609000" />
+      <workItem from="1611307374878" duration="17179000" />
     </task>
     <task id="LOCAL-00001" summary="Refactoring base.html.twig, adding Register process">
       <created>1610478590785</created>
@@ -217,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611073189569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add: ProductController.php with index.html.twig and show.html.twig">
+      <created>1611246381527</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611246381527</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,7 +244,8 @@
     <MESSAGE value="Refactoring base.html.twig, adding Register process" />
     <MESSAGE value="Add: Login process" />
     <MESSAGE value="Add: Category and Product entity, EasyAdminBundle, DashboardController.php and Cruds Controller to manage entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add: Category and Product entity, EasyAdminBundle, DashboardController.php and Cruds Controller to manage entities" />
+    <MESSAGE value="Add: ProductController.php with index.html.twig and show.html.twig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add: ProductController.php with index.html.twig and show.html.twig" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2190" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610464793842">
@@ -247,14 +264,14 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2300" y="349" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611068974980" />
-    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610724515910">
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1611329720237">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610724515910" />
-    <state x="2056" y="186" key="CommitChangelistDialog2" timestamp="1611073188328">
+    <state x="2328" y="458" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611329720237" />
+    <state x="2056" y="186" key="CommitChangelistDialog2" timestamp="1611246380210">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2056" y="186" key="CommitChangelistDialog2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611073188328" />
+    <state x="2056" y="186" key="CommitChangelistDialog2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611246380210" />
     <state x="2378" y="445" key="FileChooserDialogImpl" timestamp="1610704064043">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -279,18 +296,18 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2174" y="438" key="IDE.errors.dialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610703539943" />
-    <state x="2299" y="413" key="NewPhpClassDialog" timestamp="1611068823886">
+    <state x="2299" y="413" key="NewPhpClassDialog" timestamp="1611309166523">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2299" y="413" key="NewPhpClassDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611068823886" />
+    <state x="2299" y="413" key="NewPhpClassDialog/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611309166523" />
     <state x="1977" y="528" key="SettingsEditor" timestamp="1610704149025">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="1977" y="528" key="SettingsEditor/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610704149025" />
-    <state x="2186" y="401" key="Vcs.Push.Dialog.v2" timestamp="1611073191190">
+    <state x="2186" y="401" key="Vcs.Push.Dialog.v2" timestamp="1611246385625">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2186" y="401" key="Vcs.Push.Dialog.v2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611073191190" />
+    <state x="2186" y="401" key="Vcs.Push.Dialog.v2/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611246385625" />
     <state x="2275" y="429" width="797" height="547" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1610464538851">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
@@ -299,9 +316,9 @@
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
     <state x="2251" y="333" key="run.anything.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1610724829407" />
-    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1611071757646">
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup" timestamp="1611324413101">
       <screen x="0" y="0" width="3440" height="1400" />
     </state>
-    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611071757646" />
+    <state x="2261" y="322" width="672" height="678" key="search.everywhere.popup/3440.-186.1080.1880/0.0.3440.1400@0.0.3440.1400" timestamp="1611324413101" />
   </component>
 </project>
